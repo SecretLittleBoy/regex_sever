@@ -1,0 +1,13 @@
+@ADDRESS = http://localhost:12345
+
+GET {{ADDRESS}}
+
+
+###
+GET {{ADDRESS}}/info/
+
+###
+GET {{ADDRESS}}/match/lyh123456
+
+###
+POST {{ADDRESS}}/string/23/

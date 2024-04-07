@@ -171,7 +171,7 @@ namespace Web {
                 std::smatch sm_res;
                 if (std::regex_match(request->path, sm_res, e)) {
                     if (res_it->second.count(request->method) > 0) {
-                        request->path_match = move(sm_res);
+                        request->path_match = std::move(sm_res);
 
                         // will be deduce to std::shared_ptr<boost::asio::streambuf>
                         auto write_buffer = std::make_shared<boost::asio::streambuf>();
